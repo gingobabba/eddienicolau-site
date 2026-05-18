@@ -122,7 +122,7 @@ export default function App() {
                 <li>Compromise for the right reasons</li>
                 <li>Predict and create culture for the world we live in</li>
               </ul>
-              <p className="about-footnote">*This blurb written before AGI</p>
+              <p className="about-footnote">*This blurb was written before AGI.</p>
             </div>
           </div>
           <div className="about-facts">
