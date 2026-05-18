@@ -93,7 +93,7 @@ export default function App() {
             <p className="hero-desc">
               I write the words inside the products you use every day, and make sure they don't sound like they were written by robots.
             </p>
-            <a href="#work" className="hero-cta">See the work</a>
+            <a href="#work" className="hero-cta">Brand experience</a>
           </div>
 
           {/* CMYK-style overlapping organic shapes */}
@@ -142,6 +142,7 @@ export default function App() {
       <section id="work">
         <p className="section-label">Work</p>
         <h2 className="section-title">Brand<br />portfolio</h2>
+        <p className="section-subhead">Contact me for samples.</p>
         <div className="brand-grid">
           {BRANDS.map(b => (
             <div key={b.name} className={`brand-card${b.keepFront ? ' brand-card--keep-front' : ''}${b.noInvert ? ' brand-card--no-invert' : ''}`}>
