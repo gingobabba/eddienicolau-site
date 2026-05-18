@@ -142,7 +142,7 @@ export default function App() {
       <section id="work">
         <p className="section-label">Work</p>
         <h2 className="section-title">Brand<br />portfolio</h2>
-        <p className="section-subhead">Contact me for samples.</p>
+        <p className="section-subhead"><a href="mailto:edwardnicolau@gmail.com" className="section-subhead-link">Contact me</a> for samples.</p>
         <div className="brand-grid">
           {BRANDS.map(b => (
             <div key={b.name} className={`brand-card${b.keepFront ? ' brand-card--keep-front' : ''}${b.noInvert ? ' brand-card--no-invert' : ''}`}>
