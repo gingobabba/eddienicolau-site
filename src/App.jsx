@@ -91,7 +91,7 @@ export default function App() {
               Nicolau<span className="period">.</span>
             </h1>
             <p className="hero-desc">
-              I write the words inside the products you use every day, and make sure they don't sound like they were written by robots.
+              I make sure the words you see in the apps you use don't sound like they were written by robots.
             </p>
             <a href="#work" className="hero-cta">Brand experience</a>
           </div>
