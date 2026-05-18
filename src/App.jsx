@@ -118,9 +118,9 @@ export default function App() {
                 We're in the middle of an AI frenzy, but you can't prompt for taste. While sitting at the helm of design workflow optimization at Meta, I realized there are three things that only real designers can do well:
               </p>
               <ul className="about-list">
-                <li>Believe in a vision</li>
-                <li>Compromise for the right reasons</li>
-                <li>Predict and create culture for the world we live in</li>
+                <li><strong>Believe</strong> in a vision</li>
+                <li><strong>Compromise</strong> for the right reasons</li>
+                <li><strong>Predict and create culture</strong> for the world we live in</li>
               </ul>
               <p className="about-footnote">*This blurb was written before AGI.</p>
             </div>
