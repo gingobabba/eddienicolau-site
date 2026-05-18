@@ -119,7 +119,7 @@ export default function App() {
               <ul className="about-list">
                 <li><strong>Believe</strong> in a vision</li>
                 <li><strong>Compromise</strong> for the right reasons</li>
-                <li><strong>Predict and create culture</strong> for the world we live in</li>
+                <li><strong>Predict and create culture</strong> for the real world</li>
               </ul>
               <p className="about-footnote">*This blurb was written before AGI.</p>
             </div>
@@ -140,7 +140,7 @@ export default function App() {
       {/* Work */}
       <section id="work">
         <h2 className="section-title">Brand<br />portfolio</h2>
-        <p className="section-subhead"><a href="mailto:edwardnicolau@gmail.com" className="section-subhead-link">Contact me</a> for samples.</p>
+        <p className="section-subhead"><a href="mailto:edwardnicolau@gmail.com" className="section-subhead-link"><strong>Contact me</strong></a> for samples.</p>
         <div className="brand-grid">
           {BRANDS.map(b => (
             <div key={b.name} className={`brand-card${b.keepFront ? ' brand-card--keep-front' : ''}${b.noInvert ? ' brand-card--no-invert' : ''}`}>
