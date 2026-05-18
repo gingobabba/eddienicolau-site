@@ -1,0 +1,362 @@
+:root {
+  --cream:   #F4EFE4;
+  --ink:     #1A1A1A;
+  /* Stripe palette — 4 stripes, pushed more vibrant than Polaroid */
+  --blue:    #1A90E0;
+  --green:   #3DBF2A;
+  --yellow:  #FFD500;
+  --pink:    #F5175A;
+  /* CMYK circle colors */
+  --cyan:    #00B4F0;
+  --magenta: #EE1777;
+
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--cream);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Stripe band — 4 stripes, taller per stripe ── */
+.stripes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+.stripes span { flex: 1; }
+.s-blue   { background: var(--blue); }
+.s-green  { background: var(--green); }
+.s-yellow { background: var(--yellow); }
+.s-pink   { background: var(--pink); }
+
+/* ── Nav ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--cream);
+  border-bottom: 2px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 60px;
+}
+.nav-logo {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--ink);
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--pink); }
+
+/* ── Sections ── */
+section {
+  padding: 100px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Hero ── */
+.hero {
+  min-height: calc(100vh - 60px - 70px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.hero-text {}
+.hero-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.hero-name {
+  font-size: clamp(56px, 8vw, 100px);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  margin-bottom: 28px;
+}
+.hero-name .period {
+  color: var(--pink);
+}
+.hero-desc {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 380px;
+  opacity: 0.75;
+  margin-bottom: 36px;
+}
+.hero-cta {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cream);
+  background: var(--ink);
+  padding: 14px 28px;
+  transition: background 0.15s;
+}
+.hero-cta:hover { background: var(--pink); }
+
+/* ── Overlapping CMYK organic shapes ── */
+.circles {
+  position: relative;
+  width: 380px;
+  height: 320px;
+  justify-self: center;
+}
+.circle {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  mix-blend-mode: multiply;
+  opacity: 0.92;
+}
+/* Organic squircle shapes — each slightly different */
+.c-cyan    {
+  background: var(--cyan);
+  border-radius: 55% 45% 40% 60% / 50% 55% 45% 50%;
+  top: 0; left: 80px;
+}
+.c-yellow  {
+  background: var(--yellow);
+  border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%;
+  top: 100px; left: 0;
+}
+.c-magenta {
+  background: var(--magenta);
+  border-radius: 50% 50% 45% 55% / 45% 55% 50% 50%;
+  top: 100px; left: 160px;
+}
+
+/* ── Section labels ── */
+.section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+/* ── About ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.about-body {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+.about-body p + p { margin-top: 20px; }
+.about-list { margin: 16px 0 0 20px; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 18px; line-height: 1.7; opacity: 0.8; }
+.about-footnote { font-size: 13px !important; opacity: 0.45; margin-top: 32px !important; font-style: italic; }
+.about-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--ink);
+  padding: 14px 0;
+  font-size: 13px;
+}
+.fact-label {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 10px;
+  opacity: 0.45;
+}
+.fact-value { font-weight: 600; }
+.fact-row--stacked { align-items: flex-start; }
+.fact-row--stacked .fact-value { text-align: right; line-height: 1.5; }
+
+/* ── Brand portfolio ── */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.brand-card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--ink);
+  overflow: hidden;
+  cursor: default;
+}
+
+/* Default face — logo centered, inverted to white */
+.brand-front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  transition: opacity 0.25s ease;
+}
+.brand-logo {
+  max-width: 75%;
+  max-height: 60%;
+  object-fit: contain;
+  filter: invert(1) contrast(10);
+  mix-blend-mode: screen;
+}
+
+/* Hover face — white bg, black text */
+.brand-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+.brand-card:hover .brand-front { opacity: 0; }
+.brand-card:hover .brand-back  { opacity: 1; }
+
+/* For logos with baked-in backgrounds, keep the front visible — white back covers it */
+.brand-card--keep-front:hover .brand-front { opacity: 1; }
+
+/* Facebook + Meta AI: 15% bigger */
+.brand-card--keep-front .brand-logo {
+  max-width: 86%;
+  max-height: 69%;
+}
+
+/* Internet Archive: extreme contrast pushes gray bg to pure black so screen blend
+   makes it match the card perfectly; also 15% bigger */
+.brand-card--no-invert .brand-logo {
+  filter: contrast(100);
+  max-width: 86%;
+  max-height: 69%;
+}
+
+.brand-back-name {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.4;
+  margin-bottom: 12px;
+}
+.brand-back-roles {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+/* ── Contact ── */
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.contact-body {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.contact-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid var(--ink);
+  padding: 16px 0;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 15px;
+  transition: color 0.15s;
+}
+.contact-link:hover { color: var(--pink); }
+.contact-link span { opacity: 0.35; font-size: 12px; }
+
+/* ── Footer ── */
+footer {
+  border-top: 2px solid var(--ink);
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  section { padding: 60px 20px; }
+  .hero { grid-template-columns: 1fr; gap: 40px; }
+  .circles { display: none; }
+  .about-grid,
+  .brand-grid,
+  .contact-inner { grid-template-columns: 1fr; gap: 2px; }
+  footer { flex-direction: column; gap: 8px; text-align: center; }
+}

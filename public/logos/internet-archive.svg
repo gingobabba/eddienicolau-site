@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Black background -->
+  <rect width="400" height="400" fill="#111"/>
+  <!-- White inset border -->
+  <rect x="16" y="16" width="368" height="368" fill="none" stroke="white" stroke-width="8"/>
+
+  <!-- INTERNET — rotated up the left side -->
+  <text
+    transform="translate(54,368) rotate(-90)"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="28" font-weight="700" letter-spacing="10"
+    fill="white">INTERNET</text>
+
+  <!-- ARCHIVE — top right -->
+  <text x="74" y="76"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="52" font-weight="700" letter-spacing="2"
+    fill="white">ARCHIVE</text>
+
+  <!-- Temple: pediment triangle -->
+  <polygon points="80,104 370,104 225,148" fill="white"/>
+
+  <!-- Entablature -->
+  <rect x="80" y="148" width="290" height="22" fill="white"/>
+
+  <!-- 4 columns with inner shadow lines (fluting suggestion) -->
+  <!-- Column 1 -->
+  <rect x="90"  y="170" width="46" height="170" fill="white"/>
+  <line x1="103" y1="170" x2="103" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <line x1="116" y1="170" x2="116" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <!-- Column 2 -->
+  <rect x="162" y="170" width="46" height="170" fill="white"/>
+  <line x1="175" y1="170" x2="175" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <line x1="188" y1="170" x2="188" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <!-- Column 3 -->
+  <rect x="234" y="170" width="46" height="170" fill="white"/>
+  <line x1="247" y1="170" x2="247" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <line x1="260" y1="170" x2="260" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <!-- Column 4 -->
+  <rect x="306" y="170" width="46" height="170" fill="white"/>
+  <line x1="319" y1="170" x2="319" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+  <line x1="332" y1="170" x2="332" y2="340" stroke="#111" stroke-width="2" opacity="0.3"/>
+
+  <!-- Steps / base -->
+  <rect x="78"  y="340" width="294" height="14" fill="white"/>
+  <rect x="70"  y="354" width="310" height="14" fill="white"/>
+</svg>

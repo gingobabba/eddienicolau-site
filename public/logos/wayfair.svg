@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="#1A1A1A">
+  <!-- House/W mark -->
+  <g transform="translate(0, 4)">
+    <!-- Left peak -->
+    <polygon points="18,38 32,14 46,38" />
+    <!-- Right peak -->
+    <polygon points="40,38 54,14 68,38" />
+    <!-- Base rectangle -->
+    <rect x="18" y="38" width="50" height="28" />
+    <!-- Door cutout -->
+    <rect x="34" y="48" width="16" height="18" fill="#F4EFE4" />
+  </g>
+  <!-- Wordmark -->
+  <text x="86" y="56" font-family="Georgia, serif" font-size="34" font-weight="700" letter-spacing="-0.5">Wayfair</text>
+</svg>
