@@ -170,9 +170,6 @@ export default function App() {
             </p>
           </div>
           <div className="contact-links">
-            <a href="https://shop.eddienicolau.com/" target="_blank" rel="noreferrer" className="contact-link">
-              Buy my stuff <span>↗</span>
-            </a>
             <a href="mailto:edwardnicolau@gmail.com" className="contact-link">
               Email <span>↗</span>
             </a>
@@ -184,6 +181,9 @@ export default function App() {
             </a>
             <a href="https://www.mixcloud.com/eddienicolau/" target="_blank" rel="noreferrer" className="contact-link">
               Mixcloud <span>↗</span>
+            </a>
+            <a href="https://shop.eddienicolau.com/" target="_blank" rel="noreferrer" className="contact-link">
+              Buy my stuff <span>↗</span>
             </a>
           </div>
         </div>
