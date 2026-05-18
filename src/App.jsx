@@ -109,7 +109,6 @@ export default function App() {
 
       {/* About */}
       <section id="about">
-        <p className="section-label">About</p>
         <div className="about-grid">
           <div>
             <h2 className="section-title">Some jobs<br />still need<br />a pulse</h2>
@@ -140,7 +139,6 @@ export default function App() {
 
       {/* Work */}
       <section id="work">
-        <p className="section-label">Work</p>
         <h2 className="section-title">Brand<br />portfolio</h2>
         <p className="section-subhead"><a href="mailto:edwardnicolau@gmail.com" className="section-subhead-link">Contact me</a> for samples.</p>
         <div className="brand-grid">
@@ -162,7 +160,6 @@ export default function App() {
 
       {/* Contact */}
       <section id="contact">
-        <p className="section-label">Contact</p>
         <div className="contact-inner">
           <div>
             <h2 className="section-title">Let's<br />talk</h2>
