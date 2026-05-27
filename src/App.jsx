@@ -85,7 +85,7 @@ export default function App() {
       <section id="home">
         <div className="hero">
           <div className="hero-text">
-            <p className="hero-eyebrow">Writer · Illustrator · Vibecoder</p>
+            <p className="hero-eyebrow">Writer · Illustrator · AI Whisperer</p>
             <h1 className="hero-name">
               Eddie<br />
               Nicolau<span className="period">.</span>
